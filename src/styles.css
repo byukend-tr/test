@@ -1,0 +1,37 @@
+body {
+    font-family:"RSU";
+}
+.bg-nav-purple{
+    background-color:#663399;
+}
+/* #pills-blood-tab {
+    color: #aa96c7;
+    background-color: #663399;
+} */
+
+.nav-pills .nav-link {
+    color: #aa96c7;
+    background-color: #663399;
+}
+
+#pills-blood-tab.active {
+    color: #fff;
+    background-color: transparent;
+}
+
+#pills-test-tab.active {
+    color: #fff;
+    background-color: transparent;
+}
+#pills-result-tab.active {
+    color: #fff;
+    background-color: transparent;
+}
+#pills-users-tab.active {
+    color: #fff;
+    background-color: transparent;
+}
+#pills-condition-tab.active {
+    color: #fff;
+    background-color: transparent;
+}

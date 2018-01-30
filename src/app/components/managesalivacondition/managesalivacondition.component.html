@@ -1,0 +1,145 @@
+<div class="container-fluid">
+  <!-- <div class="row">
+      <div class="col-md-12">
+        <div class="btn-group">
+          <a class="btn btn-primary" href="condition.php">การตรวจหมู่เลือดเอบีโอ</a>
+          <a href="detailphenotype1.php" class="btn btn-outline-primary">การตรวจน้ำลาย</a>
+        </div>
+      </div>
+    </div> -->
+
+  <div style="color:#365082">
+    <h2>จัดการเงื่อนไขในการวิเคราะห์: การตรวจน้ำลาย</h2>
+  </div>
+  <a routerLink="/createsalivacondition" class="btn btn-sm btn-outline-primary">สร้างเงื่อนไขใหม่</a>
+  <form class="form-control">
+    <div class="row">
+      <div class="col-10">
+
+        การแปลผล
+        <select class="form-control form-control-sm">
+          <option value="audi"></option>
+          <option value="audi">ทั้งหมด</option>
+          <option value="volvo">Secretor gr.A</option>
+          <option value="volvo">Secretor gr.B</option>
+          <option value="volvo">Secretor gr.AB</option>
+          <option value="volvo">Secretor gr.O</option>
+          <option value="volvo">Non-Secretor</option>
+        </select>
+
+
+      </div>
+
+      <div class="col-2">
+        <br>
+        <button type="button" class="btn btn-sm btn-outline-primary " onclick="showTable();" href="#">ค้นหา</button>
+      </div>
+
+    </div>
+  </form>
+  <br>
+  <!-- <button type="button" class="btn btn-outline-danger">ลบ</button> -->
+  <table class="table table-sm table-striped table-bordered table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th>
+
+          <button type="button" class="btn btn-sm btn-outline-danger">ลบ</button>
+
+        </th>
+        <th colspan="3" border="1">Controls</th>
+        <th colspan="3" border="1">Tests</th>
+      </tr>
+      <tr>
+        <th>
+
+          <label class="custom-control custom-checkbox">
+            <input id="radio-state1" name="radio" type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description"></span>
+          </label>
+
+        </th>
+
+        <th>Secreto</th>
+        <th>Non-Secretor</th>
+        <th>NSS</th>
+
+        <th>Anti-A</th>
+        <th>Anti-B</th>
+        <th>Anti-H</th>
+
+        <th>การแปลผล</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+
+          <label class="custom-control custom-checkbox">
+            <input id="radio-state1" name="radio" type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description"></span>
+          </label>
+
+        </td>
+
+        <td>Neg</td>
+        <td>2+</td>
+        <td>2+</td>
+
+        <td>Neg</td>
+        <td>2+</td>
+        <td>Neg</td>
+
+        <td>Secretor gr.A</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+<!-- <input type="search" id="searchBox">
+<select id="countries">
+  <option value="arg">Argentina</option>
+  <option value="usa">United States of America</option>
+  <option value="usa">Umbellra</option>
+  <option value="som">Somalia</option>
+</select>
+<script>
+searchBox = document.querySelector("#searchBox");
+countries = document.querySelector("#countries");
+var when = "keyup"; //You can change this to keydown, keypress or change
+
+searchBox.addEventListener("keyup", function (e) {
+  var text = e.target.value; 
+  var options = countries.options; 
+  for (var i = 0; i < options.length; i++) {
+      var option = options[i]; 
+      var optionText = option.text; 
+      var lowerOptionText = optionText.toLowerCase();
+      var lowerText = text.toLowerCase(); 
+      var regex = new RegExp("^" + text, "i");
+      var match = optionText.match(regex); 
+      var contains = lowerOptionText.indexOf(lowerText) != -1;
+      if (match || contains) {
+          option.selected = true;
+          return;
+      }
+      searchBox.selectedIndex = 0;
+  }
+});
+</script> -->
+
+<script>
+  function showTable() {
+    var x = document.getElementById("tempTable");
+    console.log(x);
+    x.style.display = (x.style.display == "table") ? "none" : "table";
+  }
+</script>
+<script type="text/javascript">
+  $('.selectpicker').selectpicker({
+  });
+</script>

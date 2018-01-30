@@ -1,0 +1,80 @@
+<!-- <div class="py-1"> -->
+<div class="container-fluid">
+  <h2 style="color:#365082">สร้างผู้ใช้งานใหม่</h2>
+
+  <form class="form-control">
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <div class="col-3">
+            คำนำหน้าชื่อ
+            <br>
+            <select class="form-control form-control-sm">
+              <option value="volvo">Mr</option>
+              <option value="saab">Mrs</option>
+              <option value="mercedes">Ms</option>
+            </select>
+          </div>
+          <div class="col">
+            ชื่อจริง
+            <input type="text" class="form-control form-control-sm" placeholder="ชื่อจริงภาษาอังกฤษ">
+          </div>
+          <div class="col">
+            นามสกุล
+            <input type="text" class="form-control form-control-sm" placeholder="นามสกุลภาษาอังกฤษ">
+          </div>
+        </div>
+        ตำแหน่ง
+        <div class="row">
+          <div class="col">
+            <select id="selectPosition" class="form-control form-control-sm">
+              <option value="volvo">อาจารย์</option>
+              <option value="saab">หัวหน้า</option>
+              <option value="New">เพิ่มชื่อตำแหน่ง</option>
+            </select>
+          </div>
+          <div class="col">
+            <input id="inputPosition" type="text" class="form-control form-control-sm" placeholder="ชื่อตำแหน่ง" readOnly>
+          </div>
+        </div>
+
+      </div>
+      <div class="col">
+        สังกัดโรงพยาบาล
+        <div class="row">
+          <div class="col">
+            <select id="selectHospital" class="form-control form-control-sm" onchange="addNewHospital()">
+              <option value="volvo">มหาราช</option>
+              <option value="saab">ลานนา</option>
+              <option value="mercedes">ช้างเผือก</option>
+              <option value="New">เพิ่มชื่อโรงพยาบาล</option>
+            </select>
+          </div>
+          <div class="col">
+            <input id="inputHospital" type="text" class="form-control form-control-sm" placeholder="ชื่อโรงพยาบาล" readOnly>
+          </div>
+        </div>
+
+        อีเมล์
+        <input type="text" class="form-control form-control-sm" placeholder="อีเมล์"> สิทธิการใช้งานระบบ
+        <select class="form-control form-control-sm">
+          <option value="volvo">พยาบาล</option>
+          <option value="saab">เจ้าหน้าที่เทคนิคการแพทย์</option>
+          <option value="mercedes">ผู้ดูแลระบบ</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <button type="button" class="btn btn-outline-success btn-sm">สร้าง</button>
+      </div>
+    </div>
+    <!-- <a href="user.php" class="btn btn-sm btn-outline-secondary">สร้าง</a> -->
+  </form>
+  <br>
+  <!-- <center> -->
+
+  <!-- </center> -->
+  <br>
+</div>
+<!-- </div> -->
